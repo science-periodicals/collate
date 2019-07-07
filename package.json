@@ -1,0 +1,56 @@
+{
+  "name": "@scipe/collate",
+  "version": "0.0.0",
+  "description": "couchdb _id generation",
+  "main": "dist/index.js",
+  "scripts": {
+    "format": "prettier --single-quote --write \"{src,test}/**/*.js\"",
+    "test": "mocha --require babel-core/register --exit",
+    "build": "rm -rf dist/* && babel src --out-dir dist",
+    "prepublish": "npm run build",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scipe/collate.git"
+  },
+  "keywords": [
+    "couchdb"
+  ],
+  "author": "Sebastien Ballesteros",
+  "license": "See README.md",
+  "bugs": {
+    "url": "https://github.com/scipe/collate/issues"
+  },
+  "homepage": "https://github.com/scipe/collate#readme",
+  "prettier": {
+    "singleQuote": true
+  },
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "browsers": [
+              "last 2 versions",
+              "safari >= 7"
+            ],
+            "node": "8.11.1"
+          }
+        }
+      ]
+    ]
+  },
+  "eslintConfig": {
+    "extends": "@scipe"
+  },
+  "devDependencies": {
+    "@scipe/eslint-config": "^1.0.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "mocha": "^6.1.4",
+    "prettier": "^1.18.2"
+  }
+}
