@@ -1,6 +1,6 @@
 {
   "name": "@scipe/collate",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "couchdb _id generation",
   "main": "dist/index.js",
   "scripts": {
