@@ -8,7 +8,7 @@ CouchDB `_id` generation
 
 
 ```js
-import { toIndexableString, parseIndexableString } from '@scienceai/collate';
+import { toIndexableString, parseIndexableString } from '@scipe/collate';
 ```
 
 ## License
